@@ -1,0 +1,8 @@
+.banner-image {
+    background-image: url('./assets/agri.webp');
+    background-size: cover;
+}
+
+.pred-header {
+    padding-top: 500px 0 10px 100px;
+}
