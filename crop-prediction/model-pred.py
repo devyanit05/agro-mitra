@@ -9,6 +9,7 @@ import plotly.graph_objects as go
 import plotly.io as pio
 import pickle
 from sklearn.utils import resample
+
 # Metrics
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, auc, roc_curve
 
@@ -58,6 +59,7 @@ def explore_data(df):
     print('Dataset columns:', df.columns)
     print('\n')
     print('Data types of each columns: ', df.info())
+
 ################################################################################
 #                                                                              #
 #                      Checking for Duplicates                                 #
@@ -210,7 +212,8 @@ def classification_metrics(model, conf_matrix):
 
 
 # Load Dataset
-df = pd.read_csv('Crop_recommendation.csv')
+path = "E:/Web Development/Hackaverse/agro-mitra/crop-prediction"
+df = pd.read_csv(os.path.join(path, 'Crop_recommendation.csv'))
 
 # Remove Outliers
 Q1 = df.quantile(0.25)
