@@ -1,0 +1,159 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- Banner Image -->
+<div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center" style=" background-image: url('../static/assets/agri.webp');
+    background-size: cover;">
+    <div class="content-text center">
+        <!-- Add youtube video here -->
+        <iframe width="650" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=0">
+        </iframe>
+        <h1 class="text-white" style="text-align: center;">How to use this website?</h1>
+    </div>
+</div>
+
+
+<!-- Basic Description about the website -->
+<div class="container my-5 d-grid gap-5">
+    <div class="p-5-border" style="text-align: justify ; margin-left: 70px;  padding: 2px 8px 5px 5px;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque dolorum, at ducimus recusandae
+            magnam exercitationem optio voluptates provident aliquid sequi qui sapiente? Ex doloremque reiciendis
+            optio modi a eaque sint. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam doloribus vitae,
+            esse saepe deserunt quaerat distinctio, quisquam exercitationem suscipit vel, et harum a commodi ad
+            molestiae sit velit blanditiis assumenda eveniet cumque enim? Consectetur quae ad et aut culpa qui,
+            , porro ullam pariatur quasi dolorem voluptatem. Omnis quibusdam
+            vero suscipit officiis, maiores veritatis laboriosam accusantium, placeat accusamus temporibus sint
+            fugit ex at similique labore ab quis vitae tempora rerum nam, repellendus inventore recusandae? Fuga
+            quae, assumenda reprehenderit temporibus deserunt, ea cumque vel
+            at architecto quo. Recusandae fuga quas at exercitationem consequatur nam vel sed cupiditate est, sequi
+            facere placeat illo quis excepturi iusto nesciunt ex hic!</p>
+    </div>
+</div>
+
+
+
+<!-- Main Options - Learn, Perdict, Disease -->
+<h2 style="text-align: center; margin-bottom: 30px;">Learn, Predict and Detect!</h2>
+<div class="row" style="margin-left: 110px;">
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+            <img src="../static/assets/learn.webp" class="card-img-top" alt="..." height="200" width="200">
+            <div class="card-body">
+                <h5 class="card-title">Information</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="/info" class="btn btn-warning">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3" style="padding: 0 0 0 30px;">
+        <div class="card" style="width: 18rem; ">
+            <img src="../static/assets/predict.jpg" class="card-img-top" alt="..." height="200" width="200">
+            <div class="card-body">
+                <h5 class="card-title">Crop Prediction</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="/predict" class="btn btn-info">Perdict</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3" style="padding: 0 0 0 50px;">
+        <div class="card" style="width: 18rem;">
+            <img src="../static/assets/leaf.webp" class="card-img-top" alt="..." height="200" width="200">
+            <div class="card-body">
+                <h5 class="card-title">Disease Detection</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="/detect" class="btn btn-danger">Detect</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ask Questions -->
+<div id="contact-us" style="margin-left: 110px;">
+    <h2 style="text-align: center; margin-top: 40px;">Ask Questions</h2>
+    <p style="text-align: center; ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur.</p>
+
+    <div style="margin-left:110px; margin-top:30px; margin-bottom:30px;  width: 65%; height: 90%;">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Contact Number</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div><br>
+        <button class="btn btn-info btn-lg" type="submit">Submit</button>
+
+    </div>
+</div>
+
+
+
+<!-- About Us -->
+<div id="about-us" style="margin-left: 110px; ">
+    <h1 style="text-align: center; margin-top: 60px; margin-bottom: 30px;">About Us!</h1>
+</div>
+<div class="row">
+    <div class="card__abtus" style="margin-left: 100px; margin-right: 10px;">
+        <img src="../static/assets/profile pic.jpeg" alt="Dev" style="width:100%">
+        <h2>Devyani Thokal</h2>
+        <p class="title__abtus">Web Developer</p>
+        <p>VIT, Pune</p>
+        <div>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-dribbble"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-twitter"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-linkedin"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button style="width: 100%; ">Contact</button>
+        </p>
+    </div>
+    <div class="card__abtus" style="margin: 10px;">
+        <img src="../static/assets/profile pic.jpeg" alt="Dev" style="width:100%">
+        <h2>Devyani Thokal</h2>
+        <p class="title__abtus">Web Developer</p>
+        <p>VIT, Pune</p>
+        <div>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-dribbble"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-twitter"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-linkedin"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button style="width: 100%; ">Contact</button>
+        </p>
+    </div>
+    <div class="card__abtus" style="margin: 10px;">
+        <img src="../static/assets/profile pic.jpeg" alt="Dev" style="width:100% ;">
+        <h2>Devyani Thokal</h2>
+        <p class="title__abtus">Web Developer</p>
+        <p>VIT, Pune</p>
+        <div>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-dribbble"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-twitter"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-linkedin"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button style="width: 100%; ">Contact</button>
+        </p>
+    </div>
+    <div class="card__abtus" style="margin: 10px;">
+        <img src="../static/assets/profile pic.jpeg" alt="Dev" style="width:100%">
+        <h2>Devyani Thokal</h2>
+        <p class="title__abtus">Web Developer</p>
+        <p>VIT, Pune</p>
+        <div>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-dribbble"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-twitter"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-linkedin"></i></a>
+            <a class="a__abtus" href="https://www.linkedin.com/in/devyani-thokal/"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button style="width: 100%; ">Contact</button>
+        </p>
+    </div>
+</div>
+{% endblock %}

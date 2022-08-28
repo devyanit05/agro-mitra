@@ -1,15 +1,37 @@
-from flask import Flask,render_template, request
+from flask import Flask, render_template, request
+import os
+import os.path
 import pickle
 import numpy as np
 app = Flask(__name__)
 
-model = pickle.load(open('model.pkl', 'rb'))
+# to load model from crop-prediction file these first two lines are added
+path = 'E:/Web Development/Hackaverse/agro-mitra/crop-prediction'
+pickle_fn = path + '/' + 'model.pkl'
+model = pickle.load(open(pickle_fn, 'rb'))
 
-@app.route('/')
-def Hello():
+
+@app.route('/', methods=['GET'])
+def main():
+    return render_template('main.html')
+
+
+@app.route('/info', methods=['GET'])
+def info():
+    return render_template('info.html')
+
+
+@app.route('/predict', methods=['GET'])
+def predict():
     return render_template('prediction.html')
 
-@app.route('/predict', methods = ['POST'])
+
+@app.route('/detect', methods=['GET'])
+def detect():
+    return render_template('disease.html')
+
+
+@app.route('/predicted', methods=['GET', 'POST'])
 def Home():
     dataN = request.form['Nitrogen']
     dataP = request.form['Phosphorus']
@@ -17,12 +39,13 @@ def Home():
     dataM = request.form['Moisture']
     dataR = request.form['rain']
     dataT = request.form['Temp']
-    datapH= request.form['ph']
-    data = np.array([[dataN,dataP, dataK, dataM, dataR, dataT, datapH]])
+    datapH = request.form['ph']
+    data = np.array([[dataN, dataP, dataK, dataM, dataR, dataT, datapH]])
     # print(dataN,dataP, dataK, dataM, dataR, dataT, datapH)
     pred = model.predict(data)
     print(pred)
     return render_template('soilPred.html')
 
-if(__name__ == "__main__"):
-    app.run(debug = True, port=5001)
+
+if (__name__ == "__main__"):
+    app.run(debug=True, port=5001)
