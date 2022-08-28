@@ -212,8 +212,10 @@ def classification_metrics(model, conf_matrix):
 
 
 # Load Dataset
-path = "E:/Web Development/Hackaverse/agro-mitra/crop-prediction"
-df = pd.read_csv(os.path.join(path, 'Crop_recommendation.csv'))
+# path = "E:/Web Development/Hackaverse/agro-mitra/crop-prediction"
+# df = pd.read_csv(os.path.join(path, 'Crop_recommendation.csv'))
+
+df = pd.read_csv('Crop_recommendation.csv')
 
 # Remove Outliers
 Q1 = df.quantile(0.25)
