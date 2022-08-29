@@ -78,6 +78,22 @@
       </form>
     </div>
   </div>
+  <br><br><br>
+
+  {% if pred%}
+  <div class="container"
+    style="border:0.5px solid grey; border-radius: 7px;  width: 70%; 
+  background-image: conic-gradient(rgba(255, 0, 0, 0.708),pink,pink,rgb(250, 250, 135),violet,rgb(91, 153, 228),rgb(250, 250, 135),rgb(250, 250, 135),violet,pink,rgba(255, 0, 0, 0.708));">
+    <h2><b>Results</b></h2>
+    <br>
+    <h4>{{pred[0]}} are recommended by the A.I for your farm.🤖</h4>
+
+  </div>
+  {% endif %}
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
