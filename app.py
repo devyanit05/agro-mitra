@@ -41,8 +41,8 @@ def Home():
         dataT = request.form['Temp']
         datapH = request.form['ph']
         arr_data = np.array(
-            [[dataN, dataP, dataK, dataM, dataR, dataT, datapH]])
-        # print(dataN,dataP, dataK, dataM, dataR, dataT, datapH)
+            [[dataN, dataP, dataK, dataT, dataM, datapH, dataR]]
+        )
         pred = (model.predict(arr_data))
         pred[0] = pred[0].upper()
         print(pred, pred[0])
