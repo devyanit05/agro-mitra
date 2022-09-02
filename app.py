@@ -1,12 +1,10 @@
 from flask import Flask, render_template, request
-import os
-import os.path
 import pickle
 import numpy as np
 app = Flask(__name__)
 
 # to load model from crop-prediction file these first two lines are added
-path = 'E:/Web Development/Hackaverse/agro-mitra/crop-prediction'
+path = '/Users/mohd.ashharullah/Documents/Agro/crop-prediction'
 pickle_fn = path + '/' + 'model.pkl'
 model = pickle.load(open(pickle_fn, 'rb'))
 
